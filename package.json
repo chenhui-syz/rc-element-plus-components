@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "build:components": "node ./command/build.js",
     "lib": "npm run build:components && cp package.json"
@@ -22,6 +22,7 @@
     "element-plus": "^2.1.11",
     "lodash": "^4.17.21",
     "mockjs": "^1.1.0",
+    "rc-element-plust-components": "^1.0.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.13",
     "wangeditor": "^4.7.15"

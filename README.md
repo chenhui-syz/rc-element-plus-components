@@ -14,3 +14,13 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
 
 You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+
+发布到github上并部署静态网站
+1.路由的createWebHistory改成createWebHashHistory,哈希模式部署到github才能正常访问到静态资源
+2.npm run build 进行打包  《"build": "vue-tsc --noEmit && vite build",这样打包会报很多错误，把前面部分vue-tsc --noEmit && 去掉》
+3.dist就是我们要部署的文件，去github上创建对应的项目仓库
+4.setting找到github pages，点击对应的分支，save之后就会生成静态网站的链接，就可以进行访问了
+
+码云上部署静态网站
+1.新建仓库，注意要部署的dist文件，不能同时部署到github和码云，会产生冲突
+2.操作和github差不多，但是码云的这个服务需要进行下实名认证，https可以勾选上

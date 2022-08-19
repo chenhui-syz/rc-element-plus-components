@@ -30,7 +30,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import { FormOptions } from "../../components/form/src/types/types";
-import { Elmessage } from "element-plus";
+import { ElMessage } from "element-plus";
 
 let visible = ref<boolean>(false);
 
@@ -221,13 +221,12 @@ const confirm = (form: any) => {
   // 表单验证
   validate((valid: any) => {
     if (valid) {
-      Elmessage.success("验证成功");
+      ElMessage.success("验证成功");
       console.log(model);
     } else {
-      Elmessage.error("验证失败");
+      ElMessage.error("验证失败");
     }
   });
-  Elmessage;
 };
 </script>
 
