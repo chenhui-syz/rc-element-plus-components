@@ -1,0 +1,17 @@
+{
+  "name": "rc-element-plust-components",
+  "version": "1.0.0",
+  "main": "rc-element-plus-components.umd.js",
+  "module": "rc-element-plus-components.mjs",
+  "types": "index.d.ts",
+  "author": {
+    "name": "Rock"
+  },
+  "keywords": [
+    "element-plus",
+    "ts",
+    "封装组件",
+    "二次封装",
+    "vue-components"
+  ]
+}
