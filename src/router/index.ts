@@ -10,31 +10,38 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: "/",
+        name:'home',
         component: Home,
       },
+      // 图标选择器
       {
         path: "/chooseIcon",
+        name:'chooseIcon',
         // 路由懒加载
         component: () => import("../views/chooseIcon/index.vue"),
       },
+      // 表单
       {
         path: "/form",
-        // 路由懒加载
+        name:'form',
         component: () => import("../views/form/index.vue"),
       },
+      // 弹窗表单
       {
         path: "/modalForm",
-        // 路由懒加载
+        name:'modalForm',
         component: () => import("../views/modalForm/index.vue"),
       },
+      // 表格
       {
         path: "/table",
-        // 路由懒加载
+        name:'table',
         component: () => import("../views/table/index.vue"),
       },
+      // 日历
       {
         path: "/calendar",
-        // 路由懒加载
+        name:'calendar',
         component: () => import("../views/calendar/index.vue"),
       },
     ],

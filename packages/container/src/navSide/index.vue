@@ -6,15 +6,15 @@
   >
     <el-menu-item index="1">
       <el-icon-menu></el-icon-menu>
-      <span>首页</span>
+      <span class="ml-10">首页</span>
     </el-menu-item>
     <el-menu-item index="2">
       <el-icon-menu></el-icon-menu>
-      <span>图标选择器</span>
+      <span class="ml-10">图标选择器</span>
     </el-menu-item>
     <el-menu-item index="3">
       <el-icon-menu></el-icon-menu>
-      <span>趋势标记</span>
+      <span class="ml-10">趋势标记</span>
     </el-menu-item>
   </el-menu>
 </template>
@@ -27,5 +27,8 @@ let props = defineProps<{ collapse: boolean }>();
 // 设定一下展开的宽度
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
+}
+.ml-10{
+  margin-left: 10px;
 }
 </style>

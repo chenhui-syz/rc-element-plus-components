@@ -9,7 +9,7 @@ const fs = require("fs");
 
 // 打包入口文件夹
 // packages文件为打包入口文件夹，将components文件夹下的组件代码手动复制进这个文件夹中
-// hooks，style，utils三个文件夹都复制进package文件夹中
+// hooks，style，utils三个文件夹都复制进packages文件夹中
 // packages文件夹中关于hooks和utils文件的引用路径记得改一下，否则打包之后会报错
 const entryDir = path.resolve(__dirname, "../packages");
 

@@ -203,7 +203,7 @@ let options: FormOptions[] = [
   // 富文本编辑器
   {
     type: "editor",
-    value: "111",
+    value: "",
     prop: "desc",
     label: "描述",
     placeholder: "请输入描述",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button @click="visible = true"></el-button>
+    <el-button @click="visible = true" type="primary">编辑用户</el-button>
     <!-- 组件内打算修改该属性，就用v-model:传递过去 -->
     <!-- options相当于要经历两层传递 -->
     <!-- 页面传给弹窗组件，弹窗组件传给表单组件 -->
@@ -215,7 +215,7 @@ let options: FormOptions[] = [
 const cancel = (form: any) => {};
 
 // 点击确认
-const confirm = (form: any) => {
+const comfirm = (form: any) => {
   let validate = form.validate();
   let model = form.getFormDate();
   // 表单验证

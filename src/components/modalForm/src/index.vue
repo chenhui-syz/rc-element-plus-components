@@ -4,7 +4,7 @@
     <!-- v-bind="$attrs" 给当前组件注入属性，包括title，width -->
     <el-dialog v-model="dialogVisible" v-bind="$attrs">
       <template #default>
-        <m-form label-width="100px" :options="options" ref="form">
+        <rc-form label-width="100px" :options="options" ref="form">
           <!-- 插槽套插槽实现插槽的两次传递 -->
           <template #uploadArea>
             <slot name="uploadArea"></slot>
@@ -12,7 +12,7 @@
           <template #uploadTip>
             <slot name="uploadTip"></slot>
           </template>
-        </m-form>
+        </rc-form>
       </template>
       <template #footer>
         <!-- 把表单组件form利用作用域插槽传递给底部操作栏 -->
